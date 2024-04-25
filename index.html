@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <title>Калькулятор</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <header id="header">
+        <nav id="w0" class="navbar-expend-md navbar-dark bg-dark navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="/img/logo.png" alt="main-logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main id="main" class="flex-shrink-0" role="main">
+        <div class="container" id="main-block">
+            <div class="text-center mb-4 mt-3">
+                <h1> Калькулятор стоимости доставки сырья </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 border rounded-3 p-4 shadow">
+                <form id="calculate_form" action="/" method="post">
+                    <div class="mb-3 required">
+                        <label class="form-label" for="month-select">Месяц</label>
+                        <select id="month-select" class="form-select" name="month" aria-required="true">
+                            <option value="" disabled selected>Выберите параметр</option>
+                            <option value="январь">Январь</option>
+                            <option value="февраль">Февраль</option>
+                            <option value="август">Август</option>
+                            <option value="сентябрь">Сентябрь</option>
+                            <option value="октябрь">Октябрь</option>
+                            <option value="ноябрь">Ноябрь</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 required">
+                        <label class="form-label" for="tonnage-select">Тоннаж</label>
+                        <select id="tonnage-select" class="form-select" name="tonnage" aria-required="true">
+                            <option value="" disabled selected>Выберите параметр</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="75">75</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 required">
+                        <label class="form-label" for="raw_type-select">Тип сырья</label>
+                        <select id="raw_type-select" class="form-select" name="raw_type" aria-required="true">
+                            <option value="" disabled selected>Выберите параметр</option>
+                            <option value="cоя">Соя</option>
+                            <option value="шрот">Шрот</option>
+                            <option value="жмых">Жмых</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="calculate_button" class="btn btn-success">Рассчитать</button>
+                    <a href="/" type="button" class="btn btn-danger">Сброс</a>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+    <footer id="footer" class="mt-auto py-3 bg-light">
+        <div class="container">
+            <div class="row text-muted">
+                <div class="col-md-6 text-center text-md-start">
+                    &copy; 2024 год
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
